@@ -10,10 +10,10 @@ const HomePage = () => {
   const products = [
     { name: "Vegetables", image: "https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?auto=compress&cs=tinysrgb&w=400" },
     { name: "Fruits", image: "https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&w=400" },
-    { name: "Rice", image: "https://images.pexels.com/photos/4110256/pexels-photo-4110256.jpeg?auto=compress&cs=tinysrgb&w=400" },
-    { name: "Grains", image: "https://images.pexels.com/photos/1393382/pexels-photo-1393382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
-    { name: "Dairy and Poultry", image: "https://images.pexels.com/photos/8963960/pexels-photo-8963960.jpeg?auto=compress&cs=tinysrgb&w=400" },
-    { name: "Plants and seeds", image: "https://images.pexels.com/photos/113335/pexels-photo-113335.jpeg?auto=compress&cs=tinysrgb&w=400" },
+    { name: "Grains", image: "https://images.pexels.com/photos/17109241/pexels-photo-17109241/free-photo-of-seeds-for-sale-on-market.jpeg?auto=compress&cs=tinysrgb&w=400" },
+    { name: "Pulses", image: "https://images.pexels.com/photos/6086066/pexels-photo-6086066.jpeg?auto=compress&cs=tinysrgb&w=400" },
+    { name: "Poultry", image: "https://images.pexels.com/photos/1300375/pexels-photo-1300375.jpeg?auto=compress&cs=tinysrgb&w=400" },
+    { name: "Dairy", image: "https://images.pexels.com/photos/19025067/pexels-photo-19025067/free-photo-of-bottles-and-basket-on-a-farm.jpeg?auto=compress&cs=tinysrgb&w=400" },
    
   ];
   const Fertilizers = [
@@ -21,7 +21,9 @@ const HomePage = () => {
     { name: "Inorganic",image: "https://images.pexels.com/photos/25974981/pexels-photo-25974981/free-photo-of-person-hands-in-gloves-holding-bag-with-soil.jpeg?auto=compress&cs=tinysrgb&w=400" },
    
   ];
-
+ const handlesubmit=(pagename)=>{
+  navigate(`/${pagename}`);
+ };
 
   return (
     <div className="bg-green-100">
@@ -37,9 +39,9 @@ const HomePage = () => {
               <img src={product.image} alt={product.name} className="w-full h-40 object-cover rounded-md mb-3" />
               <h3 className="text-xl font-semibold">{product.name}</h3>
               <p className="text-green-700 font-bold">{product.price}</p>
-              <button className="mt-3 bg-green-600 px-4 py-2 text-white rounded-md hover:bg-green-800">
-                Select
-              </button>
+              <button className="mt-3 bg-green-600 px-4 py-2 text-white rounded-md hover:bg-green-800"onClick={()=>handlesubmit(product.name)}>
+           Select
+         </button>
             </div>
           ))}
         </div>
@@ -53,7 +55,7 @@ const HomePage = () => {
          <img src={Fertilizer.image} alt={Fertilizer.name} className="w-full h-40 object-cover rounded-md mb-3" />
          <h3 className="text-xl font-semibold">{Fertilizer.name}</h3>
          <p className="text-green-700 font-bold">{Fertilizer.price}</p>
-         <button className="mt-3 bg-green-600 px-4 py-2 text-white rounded-md hover:bg-green-800"onClick={()=>navigate("/Vegetables")}>
+         <button className="mt-3 bg-green-600 px-4 py-2 text-white rounded-md hover:bg-green-800"onClick={()=>handlesubmit(Fertilizer.name)}>
            Select
          </button>
        </div>
