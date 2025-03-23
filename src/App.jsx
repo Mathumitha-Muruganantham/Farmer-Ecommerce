@@ -12,6 +12,9 @@ import Fruits from "./Pages/Fruits";
 import Poultry from "./Pages/Poultry";
 import Dairy from "./Pages/Dairy";
 import Grains from "./Pages/Grains";
+import Pulses from "./Pages/Pulses";
+import Inorganic from "./Pages/Inorganic";
+import Organic from "./Pages/Organic";
 
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
         <Route path="/Poultry" element={<Poultry />}></Route>
         <Route path="/Dairy" element={<Dairy />}></Route>
         <Route path="/Grains" element={<Grains />}></Route>
+        <Route path="/Pulses" element={<Pulses />}></Route>
+        <Route path="/Organic" element={<Organic />}></Route>
+        <Route path="/Inorganic" element={<Inorganic />}></Route>
     
       </Routes>
     </Router>

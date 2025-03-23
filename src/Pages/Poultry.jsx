@@ -13,7 +13,7 @@ function Poultry() {
       <div className="h-screen w-screen bg-green-100">
         <Header />
         <br />
-        <h1 className='lg:text-4xl font-bold text-center'>poultrys</h1>
+        <h1 className='lg:text-4xl font-bold text-center'>Poultry</h1>
         <section className='grid grid-cols-3 sd:grid-col-1 gap-4 px-10 py-20'>
             {poultrys.map((poultry,index)=>(
              <div key={index} className='bg-white p-10 border-4 border-green-900 rounded-lg shadow-md  max-w-6xl transition-transform duration-300 hover:scale-110 text-center'>

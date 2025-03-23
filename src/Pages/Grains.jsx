@@ -3,12 +3,12 @@ import Header from './Header';
 import Footer from './Footer';
 function Grains() {
     const grains=[
-        {name:"Rice",price:"₹30/kg",img:"https://images.pexels.com/photos/209439/pexels-photo-209439.jpeg?auto=compress&cs=tinysrgb&w=400"},
-        {name:"Wheat",price:"₹20/kg",img:"https://images.pexels.com/photos/327098/pexels-photo-327098.jpeg?auto=compress&cs=tinysrgb&w=400"},
-        {name:"Maize",price:"₹35/kg",img:"https://images.pexels.com/photos/708777/pexels-photo-708777.jpeg?auto=compress&cs=tinysrgb&w=400"},
-        {name:"Oats",price:"₹40/kg",img:"https://images.pexels.com/photos/4105727/pexels-photo-4105727.jpeg?auto=compress&cs=tinysrgb&w=400"},
-        {name:"Red rice",price:"₹20/kg",img:"https://images.pexels.com/photos/1093038/pexels-photo-1093038.jpeg?auto=compress&cs=tinysrgb&w=400"},
-        {name:"Black rice",price:"₹30/kg",img:"https://media.istockphoto.com/id/1326743665/photo/jackgrain-with-green-leaf-background.jpg?b=1&s=612x612&w=0&k=20&c=gpe_8K0oj6m_P6d-dvaRI2TNs4KIjm4EbntXM2x3Hb8="},
+        {name:"Rice",price:"₹30/kg",img:"https://images.pexels.com/photos/4187615/pexels-photo-4187615.jpeg?auto=compress&cs=tinysrgb&w=600"},
+        {name:"Wheat",price:"₹20/kg",img:"https://images.pexels.com/photos/54084/wheat-grain-agriculture-seed-54084.jpeg?auto=compress&cs=tinysrgb&w=600"},
+        {name:"Maize",price:"₹35/kg",img:"https://images.pexels.com/photos/60507/maize-corn-indian-corn-vegetables-60507.jpeg?auto=compress&cs=tinysrgb&w=600"},
+        {name:"Oats",price:"₹40/kg",img:"https://images.pexels.com/photos/7421197/pexels-photo-7421197.jpeg?auto=compress&cs=tinysrgb&w=600"},
+        {name:"Red rice",price:"₹20/kg",img:"https://images.pexels.com/photos/6086557/pexels-photo-6086557.jpeg?auto=compress&cs=tinysrgb&w=600"},
+        {name:"Black rice",price:"₹30/kg",img:"https://images.pexels.com/photos/30756211/pexels-photo-30756211/free-photo-of-close-up-of-organic-black-rice-from-indonesia.jpeg?auto=compress&cs=tinysrgb&w=600"},
 
     ]
     
@@ -17,7 +17,7 @@ function Grains() {
       <div className="bg-green-100">
         <Header />
         <br />
-        <h1 className='lg:text-4xl font-bold text-center'>grains</h1>
+        <h1 className='lg:text-4xl font-bold text-center'>Grains</h1>
         <section className='grid grid-cols-3 sd:grid-col-1 gap-4 px-10 py-20'>
             {grains.map((grain,index)=>(
              <div key={index} className='bg-white p-10 border-4 border-green-900 rounded-lg shadow-md  max-w-6xl transition-transform duration-300 hover:scale-110 text-center'>

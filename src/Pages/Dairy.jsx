@@ -17,7 +17,7 @@ function Dairy() {
       <div className="bg-green-100">
         <Header />
         <br />
-        <h1 className='lg:text-4xl font-bold text-center'>dairys</h1>
+        <h1 className='lg:text-4xl font-bold text-center'>Dairy</h1>
         <section className='grid grid-cols-3 sd:grid-col-1 gap-4 px-10 py-20'>
             {dairys.map((dairy,index)=>(
              <div key={index} className='bg-white p-10 border-4 border-green-900 rounded-lg shadow-md  max-w-6xl transition-transform duration-300 hover:scale-110 text-center'>
